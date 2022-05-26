@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home work weather widget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="getLocation">
+        <input type="text" onsubmit="getValue()" class="input" id="loc" placeholder="Enter your location" value="">
+        <button type="submit" onclick="getValue()">Send</button>
+      </div>
+      <div class="weather">
+        <div class="city">City</div>
+        <div class="date">date</div>
+
+        <div class="humidity">humidity</div>
+        <div class="pressure">pressure</div>
+        <div class="temp">temperature in C°</div>
+        <div class="description"></div>
+        <img class="icon">
+        <div class="speed">wind speed</div>
+        <div class="deg">wind direction</div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
